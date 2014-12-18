@@ -1,0 +1,48 @@
+
+
+<html>
+	<head>
+	<link rel="stylesheet" type="text/css" href="homepage1.css" />
+	 <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="http://code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+		<script type="text/javascript">
+		var delay = 200;
+		function inizio(){
+			$("#container").hide().delay(300).fadeIn(300);
+			$("#titolo").hide().delay(600).fadeIn(300);
+			$("#divA1").hide().delay(900).fadeIn(300);
+			$("#divA2").hide().delay(900).fadeIn(300);
+			$(".class1").hide();
+			for(i=1;i<6;i++){
+			$("#work"+i).delay(800+delay).show("slide",{direction: "right"}, 300);
+			delay=delay+100;
+			}
+		}
+		</script>
+	<title>Piero Silvestri HP</title>
+	</head>
+<body onload="inizio()" >
+<div id="container">
+
+<div id="titolo">
+	<h4 id="titolo1">Piero Silvestri</h4>
+</div>
+
+<div id="div1">			
+			<a href="#"><div id="divA1"><h1>Home</h1></div></a>
+		
+			<a href="#"><div id="divA2"><h1>Contatti</h1></div></a>
+		
+</div>
+
+<div id="work">
+	<a href="http://informatica.malignani.org"><div class="class1" id="work1"><h3>Cartella classe</h3></div></a>
+	<a href="http://informatica.malignani.org/index10.html"><div class="class1" id="work2"><h3>HP 5ATL</h3></div></a>
+	<a href="http://informatica.malignani.org/pierosilvestri/index.html"><div class="class1" id="work3"><h3>HP Silvestri</h3></div></a>
+	<a href="http://informatica.malignani.org/pierosilvestri/carte/"><div class="class1" id="work4"><h3>Carte</h3></div></a>
+	<a href="http://informatica.malignani.org/pierosilvestri/calcolatrice/calc1.html"><div class="class1" id="work5"><h3>Calcolatrice</h3></div></a>
+</div>
+
+</div>
+</body>
+</html>
